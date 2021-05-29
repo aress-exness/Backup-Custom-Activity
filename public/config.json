@@ -8,7 +8,7 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Pushy API 2",
+            "name": "Pushy API New",
           "description": "A Template for a custom Journey Builder activity",
           "step1Label": "Configure Activity"
         }
@@ -18,12 +18,12 @@
            "inArguments":[
 				
 		   { "Title": "{{Event.943F1CE9-2D1B-4F77-AFD9-9F3FE44DD234.Title}}"},
-		   { "Data": "{{Contact.Attribute.PushyAPIDataDictionary.Data}}"},
-		   {"DeviceToken": "{{Contact.Attribute.PushyAPIDataDictionary.DeviceToken}}"}
+		   { "Data": "{{Contact.Attribute.PushyAPIDataDictionaryV2.Data}}"},
+		   {"DeviceToken": "{{Contact.Attribute.PushyAPIDataDictionaryV2.DeviceToken}}"}
                 									
 			],
           "outArguments": [],
-          "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/execute",
+          "url": "https://custom-activity-scratch.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
 	   "body": "",
             "header": "",
@@ -33,24 +33,24 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "9b57ea26-a5e4-4d56-8a2a-51069b256987",
+      "applicationExtensionKey": "d5a67447-b589-41b6-a07a-86149993845f",
       "save": {
-        "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/save",
+        "url": "https://custom-activity-scratch.herokuapp.com/journeybuilder/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/publish",
+        "url": "https://custom-activity-scratch.herokuapp.com/journeybuilder/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/stop",
+        "url": "https://custom-activity-scratch.herokuapp.com/journeybuilder/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/validate",
+        "url": "https://custom-activity-scratch.herokuapp.com/journeybuilder/validate",
         "verb": "POST",
         "useJwt": true
       }
